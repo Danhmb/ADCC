@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -14,11 +15,13 @@ body {
     overflow: hidden;
 }
 
+/* Container principal */
 .text-container {
     text-align: center;
     position: relative;
 }
 
+/* Estilo dos textos da animação inicial */
 .text-1, .text-2 {
     font-size: 4rem;
     font-weight: bold;
@@ -142,3 +145,21 @@ body {
     visibility: visible;
 }
 
+
+@media (max-width: 768px) {
+
+    .video-container {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-1, .text-2 {
+        font-size: 1.5rem; 
+    }
+
+    .rise-text {
+        font-size: 3.5rem;
+    }
+}
